@@ -1,6 +1,4 @@
-/* ==========================================
-   1. НАРЫҚТЫҚ ТҮСТЕР ЖӘНЕ ШРИФТТЕР (THEME)
-   ========================================== */
+
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
 
 * {
@@ -23,9 +21,6 @@ body {
     margin: 30px auto;
 }
 
-/* ==========================================
-   2. ЖАҢАРТЫЛҒАН НАВИГАЦИЯ (PURPLE GRADIENT)
-   ========================================== */
 .navbar {
     background: linear-gradient(135deg, #1e1b4b, #312e81);
     padding: 16px;
@@ -58,9 +53,6 @@ body {
     box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
 }
 
-/* ==========================================
-   3. КАРТОЧКАЛАР ЖӘНЕ ХЕДЕР (GLASS CARDS)
-   ========================================== */
 .card, #header-section, .header-layout {
     background-color: #1e293b;
     border: 1px solid #334155;
@@ -117,9 +109,6 @@ body {
     padding-left: 20px;
 }
 
-/* ==========================================
-   4. LAYOUT & FLOATS (TASK 2 REQUIREMENTS)
-   ========================================== */
 .content-wrapper {
     width: 100%;
 }
@@ -168,9 +157,6 @@ body {
     display: table;
 }
 
-/* ==========================================
-   5. POSITIONS (RELATIVE & ABSOLUTE DEMO)
-   ========================================== */
 .demo-box-container {
     position: relative;
     height: 220px;
@@ -215,9 +201,6 @@ body {
     box-shadow: 0 4px 10px rgba(99, 102, 241, 0.4);
 }
 
-/* ==========================================
-   6. TABLES (TASK 4 STYLING)
-   ========================================== */
 .styled-table, .schedule-table {
     width: 100%;
     border-collapse: separate;
@@ -263,9 +246,7 @@ body {
 .score-pill.top { background: rgba(34, 197, 94, 0.2); color: #4ade80; }
 .score-pill.medium { background: rgba(251, 146, 60, 0.2); color: #fb923c; }
 
-/* ==========================================
-   7. FORMS (TASK 4 STYLING)
-   ========================================== */
+
 .form-card {
     background-color: #1e293b;
     border: 1px solid #334155;
@@ -333,9 +314,6 @@ body {
     box-shadow: 0 6px 20px rgba(139, 92, 246, 0.5);
 }
 
-/* ==========================================
-   8. FOOTER
-   ========================================== */
 #footer-section, .footer-layout {
     text-align: center;
     background-color: #0f172a;
