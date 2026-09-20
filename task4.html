@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4 - SE Academic Performance & Evaluation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html">Task 1</a>
+        <a href="task2.html">Task 2</a>
+        <a href="task3.html">Task 3</a>
+        <a href="task4.html" class="active">Task 4</a>
+    </nav>
+
+    <div class="container">
+        
+        <div class="card">
+            <h2 id="table-heading" style="color: #ffffff; margin-bottom: 5px;">AITU SE-2525 Academic Performance</h2>
+            <p style="color: #94a3b8; margin-bottom: 20px;">Summary of assessment grades across core Software Engineering disciplines.</p>
+            
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Course Discipline</th>
+                        <th>Final Grade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nurtas Amantai</td>
+                        <td>Web Technologies (HTML/CSS)</td>
+                        <td><span class="score-pill high">95</span></td>
+                    </tr>
+                    <tr class="highlight-row">
+                        <td>Orynbassarov Yerdan</td>
+                        <td>Database Systems (PostgreSQL/JDBC)</td>
+                        <td><span class="score-pill top">100</span></td>
+                    </tr>
+                    <tr>
+                        <td>Yerassyl Madiuly</td>
+                        <td>Data Structures & Algorithms (C++)</td>
+                        <td><span class="score-pill medium">88</span></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><strong>Group Average Score</strong></td>
+                        <td><strong style="color: #4ade80;">94.3 / 100</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="feedback-form-container" class="form-card">
+            <h2 style="margin-top: 0; color: #ffffff;">Course & Lab Feedback Form</h2>
+            <p style="color: #94a3b8; margin-bottom: 25px;">Provide your evaluation on lab materials, coding tasks, and lecture quality.</p>
+
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="username">Student / Faculty Name:</label>
+                    <input type="text" id="username" name="username" class="form-control" placeholder="your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">University Email Address:</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="student_id@astanait.edu.kz" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="role">Role / Specialization:</label>
+                    <select id="role" name="role" class="form-control">
+                        <option value="Student">SE Student</option>
+                        <option value="Teacher">Instructor</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Would you recommend this SE curriculum module?</label>
+                    <div class="radio-options">
+                        <label class="radio-label">
+                            <input type="radio" id="yes" name="recommend" value="Yes" checked> Yes
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" id="no" name="recommend" value="No"> No
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="comments">Suggestions & Technical Feedback:</label>
+                    <textarea id="comments" name="comments" rows="4" class="form-control" placeholder="Share your experience with code execution, CSS tasks, or lab complexity..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Submit Assessment</button>
+            </form>
+        </div>
+
+        <footer class="footer-layout">
+            <p>&copy; 2026 Academic Web Project. All rights reserved.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
