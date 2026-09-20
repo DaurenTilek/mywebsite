@@ -1,0 +1,347 @@
+/* ==========================================
+   1. НАРЫҚТЫҚ ТҮСТЕР ЖӘНЕ ШРИФТТЕР (THEME)
+   ========================================== */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    transition: all 0.25s ease-in-out;
+}
+
+body {
+    background-color: #0f172a; /* Slate Dark Background */
+    color: #f8fafc;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+/* ==========================================
+   2. ЖАҢАРТЫЛҒАН НАВИГАЦИЯ (PURPLE GRADIENT)
+   ========================================== */
+.navbar {
+    background: linear-gradient(135deg, #1e1b4b, #312e81);
+    padding: 16px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 25px;
+}
+
+.navbar a {
+    color: #cbd5e1;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #38bdf8;
+    transform: translateY(-2px);
+}
+
+.navbar a.active {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
+}
+
+/* ==========================================
+   3. КАРТОЧКАЛАР ЖӘНЕ ХЕДЕР (GLASS CARDS)
+   ========================================== */
+.card, #header-section, .header-layout {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hero-banner {
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+    border-left: 6px solid #8b5cf6;
+}
+
+.hero-badge {
+    display: inline-block;
+    background: rgba(139, 92, 246, 0.2);
+    color: #c084fc;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#main-heading, .header-layout h1 {
+    color: #ffffff;
+    font-size: 2.2rem;
+    margin: 0 0 10px 0;
+}
+
+.profile-feature {
+    display: table;
+    width: 100%;
+}
+
+.avatar-wrapper {
+    display: table-cell;
+    width: 160px;
+    vertical-align: middle;
+}
+
+.profile-img, .tribute-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 20px;
+    border: 3px solid #6366f1;
+    object-fit: cover;
+}
+
+.profile-info {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 20px;
+}
+
+/* ==========================================
+   4. LAYOUT & FLOATS (TASK 2 REQUIREMENTS)
+   ========================================== */
+.content-wrapper {
+    width: 100%;
+}
+
+.sidebar-layout {
+    float: left;
+    width: 28%;
+    background-color: #1e293b;
+    padding: 20px;
+    border: 1px solid #334155;
+    border-radius: 16px;
+    min-height: 380px;
+}
+
+.main-layout {
+    float: right;
+    width: 69%;
+    background-color: #1e293b;
+    padding: 25px;
+    border: 1px solid #334155;
+    border-radius: 16px;
+    min-height: 380px;
+}
+
+.sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-nav a {
+    color: #38bdf8;
+    text-decoration: none;
+    display: block;
+    padding: 8px 0;
+    border-bottom: 1px dashed #334155;
+}
+
+.sidebar-nav a:hover {
+    color: #a855f7;
+    padding-left: 5px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* ==========================================
+   5. POSITIONS (RELATIVE & ABSOLUTE DEMO)
+   ========================================== */
+.demo-box-container {
+    position: relative;
+    height: 220px;
+    background-color: #0f172a;
+    border: 2px dashed #475569;
+    border-radius: 12px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.box {
+    border-radius: 8px;
+    padding: 12px;
+    background-color: #334155;
+    color: #ffffff;
+}
+
+.float-left-box {
+    float: left;
+    width: 45%;
+    border-left: 4px solid #38bdf8;
+}
+
+.float-right-box {
+    float: right;
+    width: 45%;
+    border-left: 4px solid #f43f5e;
+}
+
+.relative-box {
+    position: relative;
+    top: 10px;
+}
+
+.absolute-box {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    background: #6366f1;
+    color: white;
+    font-size: 0.85rem;
+    box-shadow: 0 4px 10px rgba(99, 102, 241, 0.4);
+}
+
+/* ==========================================
+   6. TABLES (TASK 4 STYLING)
+   ========================================== */
+.styled-table, .schedule-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 20px 0;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #334155;
+}
+
+.styled-table th, .schedule-table th {
+    background-color: #312e81;
+    color: #ffffff;
+    padding: 14px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.styled-table td, .schedule-table td {
+    padding: 14px;
+    border-bottom: 1px solid #334155;
+    background-color: #1e293b;
+    color: #cbd5e1;
+}
+
+.styled-table tbody tr:hover, .schedule-table tbody tr:hover {
+    background-color: #334155;
+}
+
+.highlight-row td {
+    background-color: rgba(99, 102, 241, 0.15) !important;
+    color: #a5b4fc !important;
+}
+
+.score-pill {
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 0.85rem;
+}
+
+.score-pill.high { background: rgba(56, 189, 248, 0.2); color: #38bdf8; }
+.score-pill.top { background: rgba(34, 197, 94, 0.2); color: #4ade80; }
+.score-pill.medium { background: rgba(251, 146, 60, 0.2); color: #fb923c; }
+
+/* ==========================================
+   7. FORMS (TASK 4 STYLING)
+   ========================================== */
+.form-card {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    padding: 30px;
+    border-radius: 16px;
+    max-width: 650px;
+    margin: 30px auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: #f1f5f9;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px;
+    background-color: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    color: #ffffff;
+    font-family: inherit;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #8b5cf6;
+    box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.25);
+}
+
+.radio-options {
+    background-color: #0f172a;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #334155;
+}
+
+.radio-label {
+    display: inline-block;
+    margin-right: 20px;
+    cursor: pointer;
+    color: #cbd5e1;
+}
+
+.btn-submit {
+    width: 100%;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: white;
+    border: none;
+    padding: 14px;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+}
+
+.btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(139, 92, 246, 0.5);
+}
+
+/* ==========================================
+   8. FOOTER
+   ========================================== */
+#footer-section, .footer-layout {
+    text-align: center;
+    background-color: #0f172a;
+    border: 1px solid #334155;
+    color: #94a3b8;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 30px;
+}
